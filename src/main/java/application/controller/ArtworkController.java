@@ -1,16 +1,20 @@
 package application.controller;
 
 import application.dto.ArtworkDTO;
+import application.dto.Data;
 import application.service.ArtworkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.security.PermitAll;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/artwork")
+@RequestMapping("/artworks")
 public class ArtworkController {
 
     @Autowired
@@ -23,8 +27,8 @@ public class ArtworkController {
     }
 
     @ResponseBody
-    @GetMapping("/listAll")
-    public List<ArtworkDTO> listAll(){
-        return artworkService.listAll();
+    @GetMapping("/filter/{search}")
+    public ResponseEntity<ArtworkDTO> filter(@PathVariable("search") String search){
+        return new ResponseEntity<>(artworkService.filter(search), HttpStatus.OK);
     }
 }

@@ -1,25 +1,13 @@
 package application.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 
-public class ArtworkDTO implements Serializable {
-
-    private Integer id;
-    private String title;
-    private String artist_title;
-
-    public Integer getId() {
-        return id;
-    }
-    public void setId(Integer id) { this.id = id; }
-    public String getTitle() {
-        return title;
-    }
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    public String getArtist() {
-        return artist_title;
-    }
-    public void setArtist(String artist_title) { this.artist_title = artist_title; }
+@Getter @Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class ArtworkDTO<Data> implements Serializable {
+    private Data data;
 }

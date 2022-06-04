@@ -20,4 +20,4 @@ retornando os alguns dados em JSON.
 
 1. Clone o projeto do repositório: `git clone https://github.com/barcelosguitar/arts-app`.
 2. Abra sua IDE e rode o projeto na classe principal
-   <img src="src/main/resources/img/run_project.png" alt="drawing" width="500"/>
+   <img src="src/main/resources/img/run_project.png" alt="drawing" width="380"/>

@@ -24,17 +24,36 @@ retornando alguns dados em JSON.
  <div align="center">
      <img src="src/main/resources/img/application_properties.png" alt="drawing" width="500"/>
  </div>
+
 4. Rode o projeto na classe principal **ArtworksAPIApplication.java**:
 <div align="center">
-    <img src="src/main/resources/img/run_project.png" alt="drawing" width="500"/>
+    <img src="src/main/resources/img/run_project.png" alt="drawing" width="400"/>
 </div>
+
 5. Caso tudo o ocorra bem, o Spring retornará o log com este final:
 <div align="center">
    <img src="src/main/resources/img/log.png" alt="drawing" width="780"/>
 </div>
-6. Abra seu navegador ou o Postman (caso o tenho instalado, utilize o método GET) e digite ou cole o endereço: `localhost:8080/arts-app/artworks/filter/monet` para testarmos a API. Este método retornará as obras de artes com o filtro da palavra chave "monet".
-7. Deverá mostrar o retorno da pesquisa no formato JSON, desta forma:
+
+6. Abra seu navegador ou o Postman (caso o tenho instalado, utilize o método GET) e digite ou cole o endereço: 
+`localhost:8080/arts-app/artworks/filter/monet` para testarmos a API. Este método retornará as obras de artes com o filtro da palavra chave "monet".  
+
+7. Será exibido o retorno da pesquisa no formato JSON, desta forma:
 <div align="center">
    <img src="src/main/resources/img/json_return.png" alt="drawing" width="500"/>
 </div>
 
+Se estiver utilizando o Chrome, instale a extensão [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) para melhorar a visualização.
+
+Pronto, a API está rodando e consumindo os dados da API externa Art Institute of Chicago API.   
+
+Obs: Cheque seu banco de dados, todas as consultas estão gravadas no banco de dados com um id gerado na gravação, o método utilizado na consulta e a data e hora da consulta.    
+
+### Métodos
+
+- **Pesquisar obra de arte pelo id: `localhost:8080/arts-app/artworks/getArtwork/807`**  
+    Este método retornará uma única obra de arte. Pesquise estas sugestões de obras: 807, 129884 ou 16568.
+- **Filtrar obras por palavra chave: `localhost:8080/arts-app/artworks/filter/monet`**  
+    O método retornará as principais obras relacionados a palavra chave digitada. Por definição da API externa, apenas serão exibidas 12 obras por página.
+- **Filtrar obras por palavra chave, página e limite: `localhost:8080/arts-app/artworks/filter/monet/2/30`**  
+    Retorna as obras filtradas pela palavra chave, indicando a página e o limite de exibição por página.

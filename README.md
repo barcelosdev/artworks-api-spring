@@ -1,7 +1,7 @@
 # Artworks API
 
 Esta é uma API RESTful com objetivo de consumir os dados da API externa  **[Art Institute of Chicago API](https://api.artic.edu/docs/#introduction)**, 
-retornando os alguns dados em JSON.
+retornando alguns dados em JSON.
 
 ### Tecnologias utilizadas no projeto
 
@@ -20,8 +20,15 @@ retornando os alguns dados em JSON.
 
 1. Clone o projeto do repositório: `git clone https://github.com/barcelosguitar/arts-app`.
 2. No MySQL, crie o banco de dados "artwork_api": `create database artwork_api`.
-3. Abra o arquivo application.properties que está na pasta resources.
-4. Abra sua IDE e rode o projeto na classe principal **ArtworksAPIApplication.java**:
-    | <img src="src/main/resources/img/run_project.png" alt="drawing" width="380"/> |
-    |:                                                                             :|
-5. 
+3. Abra sua IDE e antes de tudo, abra o arquivo application.properties que está dentro da pasta resources e altere as informações do nome do banco (caso tenha utilizado um nome de banco diferente), o nome de usuário e a senha do banco. Por padrão do MySQL, usuário "root" e senha "root", caso não tenha cadastrado outra senha no momento da configuração do banco.
+    <div align="center">
+        <img src="src/main/resources/img/application_properties.png" alt="drawing" width="400"/>
+    </div>
+4. Rode o projeto na classe principal **ArtworksAPIApplication.java**:
+   <div align="center">
+       <img src="src/main/resources/img/run_project.png" alt="drawing" width="400"/>
+   </div>
+5. Caso tudo o ocorra bem, o Spring retornará o log com este final:
+   <div align="center">
+      <img src="src/main/resources/img/log.png" alt="drawing" width="800"/>
+   </div>

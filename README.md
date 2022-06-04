@@ -1,6 +1,6 @@
 # Artworks API
 
-Esta é uma API RESTful com objetivo de consumir os dados da API externa  **[Art Institute of Chicago API](https://api.artic.edu/docs/#introduction)**, 
+Esta é uma API REST com objetivo de consumir os dados da API externa  **[Art Institute of Chicago API](https://api.artic.edu/docs/#introduction)**, 
 retornando alguns dados em JSON.
 
 ### Tecnologias Utilizadas

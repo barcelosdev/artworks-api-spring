@@ -3,7 +3,7 @@
 Esta é uma API RESTful com objetivo de consumir os dados da API externa  **[Art Institute of Chicago API](https://api.artic.edu/docs/#introduction)**, 
 retornando alguns dados em JSON.
 
-### Tecnologias utilizadas no projeto
+### Tecnologias Utilizadas
 
 - Java
 - Spring Boot
@@ -12,7 +12,7 @@ retornando alguns dados em JSON.
 
 ### Pré-requisitos
 
-- IDE: [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [Netbeans](https://netbeans.apache.org/download/). Nos exemplos abaixo foi utilizado o Intellij.
+- IDE: [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [Netbeans](https://netbeans.apache.org/download/). Nos exemplos abaixo foi utilizado o Intellij (também o recomendo como IDE para rodar o projeto).
 - [Java JDK 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) ou posterior.
 - [MySQL 8](https://dev.mysql.com/downloads/).
 

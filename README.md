@@ -12,7 +12,7 @@ retornando alguns dados em JSON.
 
 ### Pré-requisitos
 
-- IDE: [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [Netbeans](https://netbeans.apache.org/download/). Nos exemplos abaixo foi utilizado o Intellij (também o recomendo como IDE para rodar o projeto).
+- IDE: [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [Netbeans](https://netbeans.apache.org/download/). Os exemplos abaixo foram criados utilizando o Intellij (também o recomendo como IDE para rodar o projeto).
 - [Java JDK 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) ou posterior.
 - [MySQL 8](https://dev.mysql.com/downloads/).
 
@@ -35,10 +35,10 @@ retornando alguns dados em JSON.
    <img src="src/main/resources/img/log.png" alt="drawing" width="780"/>
 </div>
 
-6. Abra seu navegador ou o Postman (caso o tenho instalado, utilize o método GET) e digite ou cole o endereço: 
-`localhost:8080/arts-app/artworks/filter/monet` para testarmos a API. Este método retornará as obras de artes com o filtro da palavra chave "monet".  
+6. Abra seu navegador ou o Postman (acesse o [site](https://www.postman.com/) ou instale o app. Utilize o método GET) e digite ou cole o endereço: 
+`localhost:8080/arts-app/artworks/filter/monet` para testarmos a API. Este método filtrará e retornará as obras de artes com a palavra chave "monet". Também teste com alguma outra palavra chave.
 
-7. Será exibido o retorno da pesquisa no formato JSON, desta forma:
+7. Será exibido o retorno da pesquisa no formato JSON. Desta forma:
 <div align="center">
    <img src="src/main/resources/img/json_return.png" alt="drawing" width="500"/>
 </div>
@@ -56,7 +56,7 @@ Obs: Cheque seu banco de dados, todas as consultas estão sendo gravadas com um 
 - **Filtrar obras por palavra chave:** `localhost:8080/arts-app/artworks/filter/monet` 
     O método retornará as principais obras relacionados a palavra chave digitada. Por definição da API externa, apenas serão exibidas 12 obras por página.
 - **Filtrar obras por palavra chave, página e limite:** `localhost:8080/arts-app/artworks/filter/monet/2/30`  
-    Retorna as obras filtradas pela palavra chave, indicando a página e o limite de exibição por página.  
+    Retorna as obras filtradas pela palavra chave, a página e o limite de exibição, respectivamente. Fique atento pois há um limite de exibição de 100 obras por página, definido pela própria API externa. Então se tentar limitar a exibição em mais de 100 obras, será retornado a exibição padrão de 12 obras por página.
 
 <div align="center" style="padding-top: 20px;">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="50">

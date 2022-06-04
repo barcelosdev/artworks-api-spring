@@ -1,6 +1,6 @@
-# Artworks API
+# Backend Artworks API
 
-Esta é uma API RESTful com objetivo de consumir os dados da API externa  **[Art Institute of Chicago API](https://api.artic.edu/docs/#introduction)**, 
+Esta é uma API REST com objetivo de consumir os dados da API externa  **[Art Institute of Chicago API](https://api.artic.edu/docs/#introduction)**, 
 retornando alguns dados em JSON.
 
 ### Tecnologias Utilizadas
@@ -12,7 +12,7 @@ retornando alguns dados em JSON.
 
 ### Pré-requisitos
 
-- IDE: [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [Netbeans](https://netbeans.apache.org/download/). Nos exemplos abaixo foi utilizado o Intellij (também o recomendo como IDE para rodar o projeto).
+- IDE: [Intellij IDEA](https://www.jetbrains.com/pt-br/idea/download/), [Eclipse](https://www.eclipse.org/downloads/) ou [Netbeans](https://netbeans.apache.org/download/). Nos exemplos abaixo foi utilizado o Intellij (também recomendo como IDE para rodar o projeto, tendo em vista que as dependecias do Maven já serão indexadas assim que o projeto for aberto).
 - [Java JDK 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) ou posterior.
 - [MySQL 8](https://dev.mysql.com/downloads/).
 
@@ -38,7 +38,7 @@ retornando alguns dados em JSON.
 6. Abra seu navegador ou o Postman (caso o tenho instalado, utilize o método GET) e digite ou cole o endereço: 
 `localhost:8080/arts-app/artworks/filter/monet` para testarmos a API. Este método retornará as obras de artes com o filtro da palavra chave "monet".  
 
-7. Será exibido o retorno da pesquisa no formato JSON, desta forma:
+7. Será exibido o retorno da pesquisa no formato JSON. Desta forma:
 <div align="center">
    <img src="src/main/resources/img/json_return.png" alt="drawing" width="500"/>
 </div>

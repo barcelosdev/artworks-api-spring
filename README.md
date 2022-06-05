@@ -19,7 +19,7 @@ retornando alguns dados em JSON.
 ###  Quick Start
 
 1. Clone o projeto do repositório: `git clone https://github.com/barcelosguitar/arts-app`.
-2. No MySQL, crie o banco de dados "artwork_api": `create database artwork_api`.
+2. No MySQL, crie o banco de dados "artwork_api": `create database artworks_api`.
 3. Abra sua IDE e antes de tudo, abra o arquivo application.properties que está dentro da pasta resources e altere as informações do nome do banco (caso tenha utilizado um nome de banco diferente), o nome de usuário e a senha do banco. Por padrão do MySQL, usuário "root" e senha "root", caso não tenha cadastrado outra senha no momento da configuração do banco.
  <div align="center">
      <img src="src/main/resources/img/application_properties.png" alt="drawing" width="500"/>
